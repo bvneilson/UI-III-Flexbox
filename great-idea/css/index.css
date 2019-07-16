@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -63,4 +63,149 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	padding: 0 5%;
+}
+
+header {
+	height: auto;
+	width: 90%;
+	background-color: #8794B2;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	padding: 20px 40px;
+	transition: 0.5s;
+}
+
+nav a:hover {
+	background-color: #787E98;
+}
+
+.logo {
+	padding-right: 40px;
+}
+
+.intro {
+	height: 375px;
+	width: 100%;
+	margin: 86px 0px 75px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.intro-text {
+	display: flex;
+	height: auto;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 10%;
+}
+
+.intro-text h1, .services-intro-text h1 {
+	font-size: 95px;
+	padding-bottom: 10px;
+}
+
+.cta {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	border: 1px solid black;
+	padding: 2px 50px;
+	cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+	width: 50%;
+	align-self: center;
+}
+
+.cta:hover {
+	background-color: #8794B2;
+}
+
+.cta:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+	right: 0px;
+  transition: 0.5s;
+}
+
+.cta:hover:after {
+  opacity: 1;
+  right: 35px;
+}
+
+.intro-img {
+	width: 44%;
+	height: 480px;
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.info {
+	width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 40px 0px;
+}
+
+.info-half {
+	display: flex;
+	padding-bottom: 40px;
+	justify-content: space-between;
+}
+
+.middle-img {
+	width: 100%;
+	padding: 80px 0px;
+	background-image: url("../img/mid-page-accent.jpg");
+	background-position: center;
+}
+
+.middle-img img {
+	width: 100%;
+	height: auto;
+}
+
+.info-third {
+	display: flex;
+	padding-top: 40px;
+	justify-content: space-between;
+}
+
+footer {
+	padding: 40px 0px;
+}
+
+.contact a {
+	text-decoration: none;
+	color: black;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+}
