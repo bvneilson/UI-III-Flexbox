@@ -260,6 +260,7 @@ footer {
 	width: 50%;
 	border-radius: 5px;
 	transition: 0.5s;
+	background-color: #e8e8e8;
 }
 
 .service a:hover {
