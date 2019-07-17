@@ -282,7 +282,8 @@ footer {
 
 .service-facts-item ul {
 	list-style: disc;
-	padding: 20px 0px 0px 20px;
+	list-style-position: inside;
+	padding-top: 20px;
 }
 
 .service-facts-item ul li {
@@ -292,4 +293,10 @@ footer {
 .service-facts-item img {
 	width: 100%;
 	height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .service {
+		width: 100%;
+	}
 }
