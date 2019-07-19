@@ -81,6 +81,9 @@ header {
 
 nav {
 	display: flex;
+	clear: none;
+	flex: 1;
+	position:static;
 	justify-content: flex-start;
 }
 
@@ -97,6 +100,10 @@ nav a:hover {
 
 .logo {
 	padding-right: 40px;
+}
+
+.hamburger {
+	display: none;
 }
 
 .intro {
@@ -294,6 +301,37 @@ footer {
 .service-facts-item img {
 	width: 100%;
 	height: auto;
+}
+
+@media only screen and (max-width: 830px) {
+	.logo {
+		padding: 5px 20px;
+	}
+	.hamburger {
+		padding: 5px 20px;
+		font-size:1.5em;
+		line-height:50px;
+		display:inline-block;
+		z-index:2;
+	}
+  .hamburger:hover ~ nav {
+		display:block;
+	}
+	nav {
+		position: absolute;
+		width: 60%;
+		margin-top: 160px;
+		display: none;
+	}
+	nav:hover {
+		display:block;
+	}
+	nav a {
+		display:block;
+		line-height:20px;
+		text-align:center;
+		background-color: #8794B2;
+	}
 }
 
 @media only screen and (max-width: 768px) {
